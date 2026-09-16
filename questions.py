@@ -4,8 +4,8 @@ Your test questions.
 Milestone 2 asks you to write five questions your system should be able to
 answer from your corpus, specific enough to have a right answer.
 
-  ✗ "What are good dining halls?"          — no right answer
-  ✓ "What do students say about wait times at Commons during lunch?"
+✗ "What are good dining halls?"          — no right answer
+✓ "What do students say about wait times at Commons during lunch?"
 
 Fill in `QUESTIONS` below. `expects` is a word or short phrase you'd expect a
 correct answer to contain — you'll use it in unit 2 when you build a scorer,
