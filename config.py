@@ -19,8 +19,7 @@ load_dotenv(ROOT / ".env")
 # ─── The corpus you're working with ──────────────────────────────────────────
 # Change this to switch corpora, or pass --corpus on the command line.
 # Options are the folder names inside corpora/. See corpora/README.md.
-
-CORPUS = os.getenv("AI201_CORPUS", "city_guides")
+CORPUS = os.getenv("AI201_CORPUS", "campus_life")
 
 
 # ─── Chunking (Milestone 3) ──────────────────────────────────────────────────
@@ -28,7 +27,9 @@ CORPUS = os.getenv("AI201_CORPUS", "city_guides")
 # replace them with numbers that fit the documents you actually read.
 
 CHUNK_SIZE = 800        # characters per chunk
-CHUNK_OVERLAP = 120     # characters shared between neighbouring chunks
+CHUNK_OVERLAP = 0     # characters shared between neighbouring chunks,t
+# i decidedto keep 0 as we are chunking one chunk per document and there will be no overlap 
+# and the longest character in document , so everything stays under 800 character limiy
 
 
 # ─── Retrieval (Milestone 4) ─────────────────────────────────────────────────
