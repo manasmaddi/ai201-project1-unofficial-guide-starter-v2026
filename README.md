@@ -158,15 +158,6 @@ object first. I fixed each one by hand rather than pasting in a rewritten
 function, and had it run `python chunker.py` afterward to confirm it produced
 88 chunks (one per document) instead of erroring out.
 
-**2.** For Milestone 4 I asked Claude to run my five test questions plus the
-five `OUT_OF_SCOPE` questions through `python app.py retrieve` and report the
-best distance for each, rather than have it guess at what a reasonable cutoff
-would be. It came back with two cleanly separated groups (in-scope questions
-all under 0.37, out-of-scope all over 0.82) and suggested keeping the starter's
-default `THRESHOLD = 0.6` since it already sat in that gap. I didn't just take
-the number — I checked the actual retrieval output myself (the `admin_*.txt`
-and `course_cs_210*.txt` files it named are real and are the correct sources
-for those questions) before writing that reasoning into the README.
 
 <!-- ── Stretch features ─────────────────────────────────────────────────────
      Doing one? Say so here BEFORE you start. A feature this README never
